@@ -38,6 +38,7 @@ function checkCompatibility() {
 
     if (isNaN(selectDate.getTime())) {
         const compatibilityComments = document.getElementsByClassName('compatibility-comment')[0];
+        compatibilityNumber.textContent = "..."
         compatibilityComments.textContent = "Пожалуйста, выберите дату рождения.";
         input.classList.add('error');
         return;
